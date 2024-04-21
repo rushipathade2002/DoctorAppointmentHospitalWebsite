@@ -1,0 +1,225 @@
+:root {
+    --bk: #181826;
+    --border: 2px solid var(--bd);
+    --col2: #212134;
+    --bd: #474766;
+    --cp: #acacca;
+    --cp2: white;
+    --button: #4945FF;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bk: white;
+        --border: 2px solid var(--bd);
+        --col2: #e7e7f0;
+        --bd: white;
+        --cp: #161616;
+        --cp2: #181826;
+        --button: #0051bb;
+    }
+
+
+}
+
+
+
+.admin {
+    /* background-color: var(--bk); */
+    margin-left: 16rem;
+    padding-bottom: 20%;
+    margin-right: 2rem;
+    color: var(--bk);
+    
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: -1rem;
+    padding: 0;
+    width: 275px;
+    background-color: var(--col2);
+    height: auto;
+    list-style: none;
+    border-right: var(--border);
+    border-width: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+.text {
+    margin: 0 .7rem;
+}
+
+button {
+    background-color: var(--button);
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    /* color: white; */
+}
+
+a {
+    color: #54519e;
+    font-weight: 700;
+    font-style: lighter;
+}
+
+button:hover {
+    opacity: .7;
+    transition: .3s all ease-out;
+}
+
+hr {
+    border: 2px solid var(--bd);
+}
+
+h1 {
+    margin-left: 10px;
+    color: #161616;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.b {
+    padding: 0 15px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+.i {
+    padding: 0 15px;
+}
+
+.menu li {
+    padding: .7rem 0;
+    font-size: 1.3rem;
+}
+
+.menu li * {
+    color: white;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    opacity: .5;
+    background-color: var(--bd);
+    outline: .5rem solid var(--bd);
+}
+
+.item i {
+    margin-right: 16px;
+}
+
+.wide_line{
+    margin-top: 10px;
+    height: 3px;
+    /* width: max-content; */
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--bd);
+}
+
+button{
+    border: inset;
+    padding-bottom: 10px;
+}
+
+
+.loading{
+    display: grid;
+    place-items: center;
+    
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    
+
+    .menu {
+        display: block;
+        all: unset;
+        margin: 0 30px;
+        overflow: auto;
+    }
+
+    .menu li {
+        list-style: none;
+        display: inline-block;
+        margin: 5px;
+        padding: .5rem 1rem;
+        background: var(--bd);
+        border-radius: 30px;
+    }
+
+    .menu li:hover {
+        outline: 2px solid white;
+        outline-offset: 2px;
+    }
+
+    .h {
+        position: absolute;
+        top: 2rem;
+        right: 50px;
+    }
+
+
+}
+
+@media (max-width: 599px) {
+    html {
+        margin-left: 0rem;
+    }
+
+    .menu {
+        display: block;
+        all: unset;
+        margin: 0 0px;
+        overflow: auto;
+    }
+
+    .menu li {
+        display: none;
+    }
+
+    .menu hr {
+        display: none;
+    }
+
+    .menu::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0c9";
+        font-weight: 900;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    ul.menu:hover li {
+        display: block;
+        margin-left: 30px;
+    }
+
+
+
+    .menu li:hover {
+        outline: 2px solid white;
+        outline-offset: 2px;
+    }
+
+    .h {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+
+
+
+}
