@@ -1,5 +1,3 @@
 react project created by Rushikesh Pathade
 
-Rounting
-Static Website;
-api
+Hospital Website Website Created By Rushikesh Pathade using React.js And React
